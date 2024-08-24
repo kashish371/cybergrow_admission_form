@@ -1,0 +1,98 @@
+/* Background image and styling for the form */
+#admission-form:before {
+    content: '';
+    background-image: url('./cybergrow.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 450px;
+    left: 150px;
+    width: 70%;
+    height: 50%;
+    z-index: -1;
+    filter: blur(10px);
+    opacity: 0.5;
+}
+#admission-form {
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 1090px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h5 {
+    font-weight: bold;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+label {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* Border for fields in the last row */
+input#bottom-fields {
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+/* Border for all other fields */
+input.form-control {
+    margin-bottom: 15px;
+    border: 1px solid black;
+    background-color: transparent;
+    font-size: 23px;
+}
+
+select.form-control {
+    margin-bottom: 15px;
+    border: 1px solid black;
+    background-color: transparent;
+    font-size: 23px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+/* Photo rectangle */
+.photo-rectangle {
+    width: 150px;
+    height: 200px;
+    border: 2px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.container {
+    padding-top: 30px;
+}
+
+/* Button styling */
+button.btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.btn:hover {
+    background-color: darkgrey;
+}
